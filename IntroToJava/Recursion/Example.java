@@ -20,18 +20,18 @@ public class Example {
             countNum(n + 1);
 
             /* Since n==4 does not satisfy the requirements in the line above,
-             * it will exit the method and return back to the previous method,
+             * it will exit the method and return back to where it came from, 
              * where n==3.
              * Here, it will proceed on with the 2nd line of code which is the
              * printing of n. Hence the 1st output, 3 */
             System.out.print(n);
 
             /* After Java is done with the code ^, it will proceed (again) and
-             * do the same as in line 21. Take note as of now your n is still == 3 */
+             * do the same as in line 20. Take note as of now your n is still == 3 */
             countNum(n + 1);
 
-            /* Once that is done, Java will exit the method as there are no other
-             * codes to run, and goes back to n==2, starting from line 26. */
+            /* Once that ^ is done, Java will exit the method as there are no other
+             * codes to run, and goes back to n==2, starting from line 27. */
         }
     }
 }
